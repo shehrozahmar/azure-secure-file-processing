@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storageAccountName": {
+        "value": "myallimportantfiles"
+      },
+      "rawContainerName": {
+        "value": "raw-files"
+      },
+      "processedContainerName": {
+        "value": "processed-files"
+      },
+      "location": {
+        "value": "eastus"
+      },
+      "virtualMachineName": {
+        "value": "file-process-vm"
+      },
+      "adminUsername": {
+        "value": "azureuser"
+      },
+      "adminPassword": {
+        "value": "Finland123$"
+      },
+      "networkInterfaceName": {
+        "value": "file-process-vm-nic"
+      },
+      "virtualNetworkName": {
+        "value": "file-process-vm-vnet"
+      },
+      "subnetName": {
+        "value": "default"
+      },
+      "setupScriptUrl": {
+        "value": "https://myallimportantfiles.blob.core.windows.net/scripts/setup_vm.sh"
+      },
+      "setupScriptFileName": {
+        "value": "document_processor.py"
+      }
+    }
+  }
+  
